@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Sets</h2>
+<p>forEach() calls a function for each element:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Set
+const letters = new Set();
+letters.add("a");
+letters.add("m");
+letters.add("o");
+letters.add("n");
+letters.add("i");
+letters.add("r");
+letters.add("2");
+
+
+// List all Elements
+let text = "";
+letters.forEach (function(value) {
+  text += value + "<br>";
+})
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
